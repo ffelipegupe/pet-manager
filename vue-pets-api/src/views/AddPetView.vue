@@ -81,6 +81,7 @@ export default {
                 let json = await response.json();
                 console.log(json)
                 this.formSubmitted = true
+                this.infoMissing = true;
             } catch (error) {
                 this.infoMissing = false;
                 console.error('error',error);
